@@ -1,0 +1,50 @@
+[
+  {  
+    "id": 1,
+    "nombre": "Nike Blazzers",
+    "precio": 10.9,
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNjQDefZXq4K0DSNZMxZesF4V-Zd7LtKZI9A&s",
+    "tipo": 1,
+    "descripcion": "Zapatillas clásicas de Nike con diseño retro y elegante. Ideales para un look casual y cómodo, con material de alta calidad y soporte acolchado."
+  },
+  {  
+    "id": 2,
+    "nombre": "Nike Air-Force One",
+    "precio": 180,
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6WKuLyzdwVplW7So6rcIwXY4KvXOPzItzGA&s",
+    "tipo": 2,
+    "descripcion": "Las icónicas Nike Air Force 1, famosas por su estilo atemporal y confort excepcional. Perfectas para el uso diario con una suela de goma duradera."
+  },
+  {  
+    "id": 3,
+    "nombre": "Nike Air Jordan 1",
+    "precio": 340,
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgnaZOf9uFVhyHEiBGVOb6xYF2Lq1ZzRu7Zg&s",
+    "tipo": 3,
+    "descripcion": "Zapatillas Air Jordan 1, una leyenda en el mundo del baloncesto. Ofrecen un diseño elegante y una gran comodidad, con una combinación de materiales premium."
+  },
+  {  
+    "id": 4,
+    "nombre": "Nike Air Jordan 1 Chicago",
+    "precio": 250,
+    "imagen": "https://s.yimg.com/ny/api/res/1.2/HW_2BMeLqz.jDJbfMEAaKg--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTQyNw--/https://s.yimg.com/os/creatr-uploaded-images/2023-07/6d3d8c40-19b1-11ee-bfbf-9b3080f0e6d7",
+    "tipo": 4,
+    "descripcion": "Una versión especial del Air Jordan 1 con los colores icónicos de Chicago. Combinan estilo retro con una construcción de primera calidad, ideales para coleccionistas y fanáticos del baloncesto."
+  },
+  {  
+    "id": 5,
+    "nombre": "Nike Air-Max 97",
+    "precio": 150,
+    "imagen": "https://m.media-amazon.com/images/I/61fVzKPLppL._AC_SL1100_.jpg",
+    "tipo": 5,
+    "descripcion": "Las Nike Air Max 97 destacan por su diseño innovador y comodidad. Equipadas con la tecnología de amortiguación Air Max, son perfectas para quienes buscan estilo y soporte en cada paso."
+  },
+  {  
+    "id": 6,
+    "nombre": "Nike Louis Vuitton",
+    "precio": 4000,
+    "imagen": "https://phantom-expansion.unidadeditorial.es/e81e8466874c660f931d8acbea167cb1/crop/0x0/990x558/resize/828/f/jpg/assets/multimedia/imagenes/2022/02/15/16449334363458.jpg",
+    "tipo": 6,
+    "descripcion": "Una colaboración exclusiva entre Nike y Louis Vuitton, ofreciendo un diseño lujoso y elegante. Estas zapatillas representan la fusión perfecta entre moda de alta gama y rendimiento deportivo."
+  }
+]
