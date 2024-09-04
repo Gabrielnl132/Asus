@@ -1,16 +1,21 @@
 import { Routes } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
 import { ProductosComponent } from './pages/productos/productos.component';
-import { AcercadeComponent } from './pages/acercade/acercade.component';
-import { Error404Component } from './pages/error404/error404.component';
 import { ProductoComponent } from './pages/producto/producto.component';
 
+import { AcercadeComponent } from './pages/acercade/acercade.component';
+import { LoginComponent } from './pages/login/login.component';
+import { Error404Component } from './pages/error404/error404.component';
+import { permissionsGuard } from './guards/permissions.guard';
+import { warningsGuard } from './guards/warnings.guard';
+import { canActivate, redirectUnauthorizedTo } from '@angular/fire/auth-guard';
 
 export const routes: Routes = [
     { path: 'home', component: HomeComponent },
-    { path: 'productos', component: ProductosComponent },
-    { path: 'producto/:id', component: ProductoComponent },
-    { path: 'acercade', component: AcercadeComponent },
-    { path: '', redirectTo: 'home', pathMatch: 'full' },//se suponew que no deveria tener los asteriscos
-    {path: '**', component:Error404Component}
+    { path: 'productos', component: ProductosComponent, ...canActivate(()=>redirectUnauthorizedTo(['/login'])) },
+    { path: 'producto/:id', component: ProductoComponent, canDeactivate: [warningsGuard]},
+    { path: 'acercade', component: AcercadeComponent, canActivate: [permissionsGuard] },
+    { path: 'login', component: LoginComponent },
+    { path: '', redirectTo: 'home', pathMatch: 'full' },
+    { path: '**', component: Error404Component },
 ];
