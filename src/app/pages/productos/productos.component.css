@@ -1,32 +1,69 @@
 /* Estilos del footer */
 footer {
-    background-color: #111;
-    color: #fff;
-    padding: 20px 0;
+    background-color: #0d1117;
+    color: #c9d1d9;
+    padding: 40px 0;
     font-family: 'Arial', sans-serif;
-    margin-top: 40px; /* Agregar margen superior para separar del contenido principal */
+    margin-top: 50px;
+    border-top: 3px solid #30363d; /* Añadir una línea superior para separación */
 }
 
 footer a {
-    color: #fff;
+    color: #58a6ff;
     text-decoration: none;
 }
 
 footer a:hover {
+    color: #1f6feb;
     text-decoration: underline;
 }
 
 footer .social-icons {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 }
 
 footer .social-icons a {
-    margin: 0 10px;
-    color: #fff;
+    margin: 0 12px;
+    color: #c9d1d9;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out; /* Añadir transición de color y movimiento */
 }
 
 footer .social-icons a:hover {
-    color: #ccc;
+    color: #58a6ff;
+    transform: scale(1.1); /* Aumentar ligeramente el tamaño al pasar el mouse */
+}
+
+footer h5 {
+    margin-bottom: 25px;
+    font-size: 1.3rem;
+    color: #c9d1d9;
+    border-bottom: 2px solid #30363d;
+    padding-bottom: 12px;
+}
+
+footer ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+footer ul li {
+    margin-bottom: 12px;
+    font-size: 1rem;
+}
+
+footer ul li a {
+    color: #8b949e;
+    transition: color 0.3s ease-in-out;
+}
+
+footer ul li a:hover {
+    color: #58a6ff;
+}
+
+footer .container p {
+    margin-top: 30px;
+    font-size: 0.95rem;
+    color: #8b949e;
 }
 
 /* Estilos para las tarjetas */
@@ -34,17 +71,28 @@ footer .social-icons a:hover {
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Espacia el contenido de la tarjeta de manera uniforme */
-    min-height: 350px; /* Altura mínima para asegurar uniformidad */
-    margin-bottom: 20px; /* Espacio entre tarjetas */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Agrega una sombra suave para destacar las tarjetas */
-    border-radius: 8px; /* Bordes redondeados para un mejor aspecto */
-    overflow: hidden; /* Asegura que el contenido no se desborde */
+    justify-content: space-between;
+    min-height: 370px; /* Altura mínima ligeramente mayor */
+    margin-bottom: 25px;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada */
+    border-radius: 12px; /* Bordes más redondeados */
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Transiciones para dinamismo */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Efecto de elevación al pasar el mouse */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* Sombra más intensa */
 }
 
 .card-img-top {
-    height: 200px;
+    height: 220px; /* Aumentar la altura de la imagen */
     object-fit: cover;
+    transition: transform 0.3s ease-in-out; /* Transición para la imagen */
+}
+
+.card-img-top:hover {
+    transform: scale(1.05); /* Aumentar ligeramente el tamaño al pasar el mouse */
 }
 
 .card-body {
@@ -52,17 +100,20 @@ footer .social-icons a:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 15px; /* Ajuste de padding para mejorar el espacio interno */
+    padding: 20px; /* Padding más amplio */
+    background-color: #161b22; /* Fondo oscuro para contraste */
+    color: #c9d1d9; /* Texto claro */
 }
 
 .card-title, .card-text {
     text-align: center;
-    margin-bottom: 10px; /* Espacio adicional entre título y texto */
+    margin-bottom: 12px;
 }
 
 .card-footer {
     text-align: center;
-    padding: 10px;
-    background-color: #f8f9fa; /* Fondo ligeramente gris para el footer de la tarjeta */
-    border-top: 1px solid #ddd; /* Separador entre el contenido y el footer */
+    padding: 15px;
+    background-color: #21262d; /* Fondo más oscuro para el footer de la tarjeta */
+    border-top: 1px solid #30363d;
+    color: #8b949e;
 }
